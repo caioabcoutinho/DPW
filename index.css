@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    text-align: center; 
+    width: 100%;
+    background-color:rgb(255, 248, 182); 
+}
+
+.titulo{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xxx-large;
+    font-weight: bolder;
+    margin-top: 100px;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden; 
+    background-color: black;
+    top: 0;
+    left: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+
+}
+nav li{
+    float: left;
+}
+
+nav li a{
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+    padding: 30px 30px ;
+}
+
+nav li a:hover {
+    background-color:rgb(248, 223, 0);
+    color: black;
+}
+
+.active {
+    background-color:rgb(248, 223, 0);
+    color: black;
+}
+
+body{
+    background-color: rgb(255, 248, 182);
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+article{
+    background-color: rgb(59, 59, 59);
+    color: aliceblue;
+    padding: 3%;
+    text-align: justify;
+    display: flex;    
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+    @media screen and (min-width: 769px) {
+        margin-top: 20x;
+    }
+}
+
+p::first-letter{
+    font-size: 120%;
+}
+
+p:only-child{
+    color: rgb(248, 223, 0);
+}
+
+footer{
+    background-color: rgb(59, 59, 59);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.gallery{
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.galeria{
+    margin: 5px;
+    border: 1px solid rgb(59, 59, 59);
+    width: 180px;
+}
+
+.imggaleria{
+    width: 100%;
+    height: auto;
+}
+
+.galeria:hover{
+    border: 1px solid rgb(59, 59, 59);
+}
+
+.imagem{
+    width: 70%
+}
+
+.descricao{
+    padding: 15px;
+    text-align: center;
+}
+
+.textos{
+    padding: 1%;
+    flex-basis: 100%;
+    font-size: large;
+   
+}
+
+.tituloPaginas{
+    text-align: center;
+    font-size: x-large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+td {
+    padding: 15px;
+}
+
+th {
+    text-align: center;
+    padding: 15px;
+}
+
+td a {
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+}
+
+td a:hover {
+    background-color:rgb(248, 223, 0);
+    color: black;   
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+}
+
+a:hover {
+    background-color:rgb(248, 223, 0);
+    color: black;
+}
+
+.destaque{
+    font-weight:bolder;
+}
+
+.enfatizar{
+    color: rgb(248, 223, 0);
+    font-weight: bolder;
+}
+
+.imagem{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
+
+.quiz{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    background-color: rgb(59, 59, 59);
+    color: aliceblue;
+}
+
+h2, h3, p{
+    margin: 0;
+}
+
+input[type="radio"]{
+    margin-right:10px;
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+button{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: rgb(248, 223, 0);
+    color: #000000;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.button{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: rgb(248, 223, 0);
+    color: #000000;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.alternativas{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(248, 223, 0);
+    
+}
+
+
+@media screen and(max-width: 768px) {
+    .titulo{
+        font-size: large;
+    }
+
+    nav li a{
+        padding: 2% 10%;
+    }
+
+    .textos{
+        padding: 2%;
+        flex-basis: 100%;
+    }
+
+    .imagem{
+        width: 100%;
+    }
+    
+    .quiz{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button{
+        width: 100%;
+    }
+}
+

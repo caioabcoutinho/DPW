@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-<title>Girassol</title>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="index.css">
-<link rel="icon" href="https://img2.gratispng.com/20180131/wgw/kisspng-common-sunflower-clip-art-sunflower-vector-5a71888ed72b27.3023692915173899668813.jpg">
+    <title>Girassol</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="https://img2.gratispng.com/20180131/wgw/kisspng-common-sunflower-clip-art-sunflower-vector-5a71888ed72b27.3023692915173899668813.jpg">
+    <script src="index.js"></script>
 </head>
 
 
@@ -235,5 +236,30 @@
         <a href="gabarito.html" class="button">Gabarito</a>
 </form>
 </div>
+
+<div id="customization-panel">
+    <h3 class="textos">Customização</h3>
+    <label class="textos" for="tamanhoFonte">Tamanho da Letra:</label>
+    <select id="tamanhoFonte">
+        <option value="medium">Médio (original)</option>
+        <option value="small">Pequeno</option>
+        <option value="large">Grande</option>
+    </select>
+    <br><br>
+    <label class="textos" for="familiaFonte">Fonte da Letra:</label>
+    <select id="familiaFonte">
+        <option value="Arial">Arial (original)</option>
+        <option value="Verdana">Verdana</option>
+        <option value="Georgia">Georgia</option>
+    </select>
+    <br><br>
+    <label class="textos" for="corFundo">Cor de Fundo:</label>
+    <select id="corFundo">
+        <option value="rgb(59, 59, 59)">Cinza (original)</option>
+        <option value="rgb(10, 10, 10)">Preto</option>
+        <option value="rgb(150, 75, 0)">Marrom</option>
+    </select>
+</div>
+
 
 </body>

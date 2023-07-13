@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="https://img2.gratispng.com/20180131/wgw/kisspng-common-sunflower-clip-art-sunflower-vector-5a71888ed72b27.3023692915173899668813.jpg">
-    <script src="index.js"></script>
+    <script src="encontrar.js"></script>
 </head>
-
 
 <body>
     <header>
@@ -79,6 +78,15 @@
                     Curiosidades Gerais
                 </div>
             </div>
+            
+            <div class="galeria">
+                <a target="_self" href="#localizacao">
+                    <img class="imggaleria" src="https://1.bp.blogspot.com/_iaM7KHZ8ikE/TPEN7c-NbLI/AAAAAAAAAAQ/D-2hiKofhMg/s1600/mapa.png" alt="">
+                </a>
+                <div class="descricao">
+                    Onde Encontrar 
+                </div>
+            </div>
         </section>
         
         <section class="curiosidade">
@@ -115,11 +123,31 @@
                 <ol>
                     <li>Que tal incluir as sementes dessa planta na sua alimentação? Elas possuem muitas fibras, vitaminas e minerais que deixam a dieta mais nutritiva. Além disso, podem agregar mais sabor aos diferentes pratos. Entre os benefícios, ajuda na perda de peso, proporcionando uma sensação de saciedade, e também no controle dos níveis de glicose no sangue. Por isso, é indicada para a alimentação de diabéticos. É possível comê-las cruas, torradas e adicioná-la às receitas. Da semente também é extraído do óleo de girassol, rico em ômega 3, 6 e 9, e vitamina E.</li>
                     <li>Segundo a Mitologia Grega, o aparecimento da flor do girassol aconteceu da seguinte maneira: Clítia era uma ninfa apaixonada por Hélio, o deus do Sol, que a abandonou. Ela então passou a ficar sentada no chão, sem comer e sem beber, alimentando-se apenas das suas próprias lágrimas, até que os seus pés criaram raízes e a sua face transformou-se numa flor, que continuou seguindo o sol. (Site que fala um pouco mais sobre: <a href="https://paisagismodigital.com/noticias/?id=lenda-do-girassol-uma-historia-de-amor-%7C-paisagismo-digital&in=402" target="externo"><span class="destaque">https://paisagismodigital.com/</span></a>).</li>
-                </ol>
+                </ol><br>
 
+                <h3 id="localização">Onde encontrar</h3><br>
+                <p>No Etê Jardim Ecológico , no Rio de Janeiro, você encontrará um campo de girassóis deslumbrante, perfeito para admirar e explorar. Para descobrir o quão próximo você está dessa experiência incrível, basta colocar abaixo suas coordenadas que calculamos a distância para você!</p><br>
+                <div class="distancia">
+                <form id="formulario">
+                    <label for="latitude">Latitude:</label>
+                    <input type="text" id="latitude" required><br>
+
+                    <label for="longitude">Longitude:</label>
+                    <input type="text" id="longitude" required><br>
+
+                    <label for="unidade">Unidade:</label>
+                    <select id="unidade">
+                        <option value="K">Quilômetros</option>
+                        <option value="M">Milhas</option>
+                    </select><br>
+
+                    <button type="submit">Calcular</button>
+                </form>
+                </div>
+            <div id="resultado"></div>
             </div>
         </section>
-
+        
     </article>
 
     <div id="customization-panel">

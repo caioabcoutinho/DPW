@@ -252,3 +252,38 @@ button{
     }
 }
 
+#quiz-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 248, 182);
+}
+
+#pergunta-container {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#resposta-container {
+    margin-bottom: 20px;
+}
+
+#proxima-pergunta-btn, #reiniciar-btn {
+    padding: 10px 20px;
+    background-color: rgb(248, 223, 0);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#proxima-pergunta-btn:hover, #reiniciar-btn:hover {
+    background-color: #45a049;
+}
+
+#resultado-container {
+    font-weight: bold;
+    display: none;
+}

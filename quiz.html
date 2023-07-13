@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <title>Girassol</title>
     <meta charset="UTF-8">
@@ -7,8 +7,6 @@
     <link rel="icon" href="https://img2.gratispng.com/20180131/wgw/kisspng-common-sunflower-clip-art-sunflower-vector-5a71888ed72b27.3023692915173899668813.jpg">
     <script src="index.js"></script>
 </head>
-
-
 <body>
     <header>
         <p class="titulo">GIRASSOL</p>
@@ -29,237 +27,39 @@
             </ul>
         </nav>
     </header>
+    
+    <div id="quiz-container">
+        <div id="pergunta-container"></div>
+        <div id="resposta-container"></div>
+        <button id="proxima-pergunta-btn">Próxima Pergunta</button>
+        <div id="resultado-container"></div>
+        <button id="reiniciar-btn" style="display: none;">Jogar Novamente</button>
+  </div>
 
-    <div class="quiz">
-        <form>
-            <h1>Quiz sobre Girassol</h1><br><br>
-            <h3>Questão 1: Qual é o nome científico do girassol?</h3>
-            <input type="radio" name="resposta1" value="helianthus annuus">a) Helianthus annuus.<br>
-
-            <input type="radio" name="resposta1" value="Girassolus maximus">b) Girassolus maximus.<br>
-
-            <input type="radio" name="resposta1" value="florus solarius">c) Florus solarius.<br>
-
-            <input type="radio" name="resposta1" value="helios sunflowerus">d) Helios sunflowerus.<br>
-            <br>
-            <h3>Questão 2: Qual é a origem geográfica dos girassóis?</h3>
-
-            <input type="radio" name="resposta2" value="america do norte">a) América do Norte.<br>
-
-            <input type="radio" name="resposta2" value="europa ocidental">b) Europa Ocidental.<br>
-
-            <input type="radio" name="resposta2" value="africa central">c) África Central.<br>
-
-            <input type="radio" name="resposta2" value="asia oriental">d) Ásia Oriental.<br>
-            <br>
-            <h3>Questão 3: Quais são as cores típicas das pétalas de um girassol?</h3> 
-
-            <input type="radio" name="resposta3" value="vermelho e amarelo">a) Vermelho e amarelo.<br>
-
-            <input type="radio" name="resposta3" value="azul e branco">b) Azul e branco.<br>
-
-            <input type="radio" name="resposta3" value="rosa e roxo">c) Rosa e roxo.<br>
-   
-            <input type="radio" name="resposta3" value="amarelo e laranja">d) Amarelo e laranja.<br>
-            <br>
-            <h3>Questão 4: Quais são as partes principais de um girassol?</h3> 
-
-            <input type="radio" name="resposta4" value="raiz, caule, folhas e flores">a) Raiz, caule, folhas e flores.<br>
-
-            <input type="radio" name="resposta4" value="folhas, frutas, ramos e sementes">b) Folhas, frutas, ramos e sementes.<br>
-            
-            <input type="radio" name="resposta4" value="petalas, estames, pistilo e nectar">c) Pétalas, estames, pistilo e néctar.<br>
-            
-            <input type="radio" name="resposta4" value="caule, folhas, flores e sementes">d) Caule, folhas, flores e sementes.<br>
-            <br>
-            <h3>Questão 5: Normalmente, se cultivado em campo, até qual altura o girassol alcança?</h3> 
-
-            <input type="radio" name="resposta5" value="1-2 metros">a) 1-2 metros.<br>
-
-            <input type="radio" name="resposta5" value="3-4 metros">b) 3-4 metros.<br>
-            
-            <input type="radio" name="resposta5" value="5-6 metros">c) 5-6 metros.<br>
-            
-            <input type="radio" name="resposta5" value="7-8 metros">d) 7-8 metros<br>
-            <br>
-            <h3>Questão 6: Para nós, qual é a função das sementes de girassol?</h3> 
-
-            <input type="radio" name="resposta6" value="produção de oleo comestivel">a) Produção de óleo comestível.<br>
-
-            <input type="radio" name="resposta6" value="polinização de outras flores">b) Polinização de outras flores.<br>
-
-            <input type="radio" name="resposta6" value="reprodução assexuada">c) Reprodução assexuada.<br>
-
-            <input type="radio" name="resposta6" value="proteção contra predadores">d) Proteção contra predadores.<br>
-            <br>
-            <h3>Questão 7: O girassol é uma planta perene, anual, bienal ou bianual?</h3> 
-
-            <input type="radio" name="resposta7" value="perene">a) Perene.<br>
-
-            <input type="radio" name="resposta7" value="Anual">b) Anual.<br>
-
-            <input type="radio" name="resposta7" value="bienal">c) Bienal.<br>
-
-            <input type="radio" name="resposta7" value="bianual">d) Bianual.<br>
-            <br>
-            <h3>Questão 8: Qual é a principal substância produzida pelos girassóis?</h3> 
-
-            <input type="radio" name="resposta8" value="clorofila">a) Clorofila.<br>
-
-            <input type="radio" name="resposta8" value="acido ascorbico">b) Ácido ascórbico.<br>
-            
-            <input type="radio" name="resposta8" value="oleo vegetal">c) Óleo vegetal.<br>
-            
-            <input type="radio" name="resposta8" value="amido">d) Amido.<br>
-            <br>
-            <h3>Questão 9: Quanto tempo, em média, leva para um girassol crescer do plantio à floração?</h3> 
-
-            <input type="radio" name="resposta9" value="1-2 semanas">a) 1-2 semanas.<br>
-
-            <input type="radio" name="resposta9" value="1-2 meses">b) 1-2 meses.<br>
-            
-            <input type="radio" name="resposta9" value="3-4 meses">c) 3-4 meses.<br>
-            
-            <input type="radio" name="resposta9" value="5-6 meses">d) 5-6 meses.<br>
-            <br>
-            <h3>Questão 10: Quais são alguns dos usos comuns dos girassóis além de sua beleza ornamental?</h3> 
-
-            <input type="radio" name="resposta10" value="alimentação animal e produção de biocombustiveis">a) Alimentação animal e produção de biocombustíveis.<br>
-
-            <input type="radio" name="resposta10" value="perfumaria e fabricação de tecidos">b) Perfumaria e fabricação de tecidos.<br>
-            
-            <input type="radio" name="resposta10" value="construção de abrigos naturais e artesanato">c) Construção de abrigos naturais e artesanato.<br>
-            
-            <input type="radio" name="resposta10" value="cura de doenças e criação de tintas">d) Cura de doenças e criação de tintas<br>
-            <br>
-            <h3>Questão 11: Quais são as condições de luz ideais para o crescimento saudável de girassóis?</h3> 
-
-            <input type="radio" name="resposta11" value="sombra parcial">a) Sombra parcial.<br>
-
-            <input type="radio" name="resposta11" value="luz difusa">b) Luz difusa.<br>
-
-            <input type="radio" name="resposta11" value="sol pleno">c) Sol pleno.<br>
-
-            <input type="radio" name="resposta11" value="luz artificial">d) Luz artificial.<br>
-            <br>
-            <h3>Questão 12: Qual é a época do ano mais comum para o florescimento dos girassóis?</h3> 
-
-            <input type="radio" name="resposta12" value="primavera">a) Primavera.<br>
-
-            <input type="radio" name="resposta12" value="verao">b) Verão.<br>
-
-            <input type="radio" name="resposta12" value="outono">c) Outono.<br>
-
-            <input type="radio" name="resposta12" value="inverno">d) Inverno.<br>
-            <br>
-            <h3>Questão 13: Qual é o nome da estrutura em forma de espiral encontrada no centro de um girassol?</h3> 
-
-            <input type="radio" name="resposta13" value="estame">a) Estame.<br>
-
-            <input type="radio" name="resposta13" value="petala">b) Pétala.<br>
-            
-            <input type="radio" name="resposta13" value="bractea">c) Bráctea.<br>
-            
-            <input type="radio" name="resposta13" value="receptaculo floral">d) Receptáculo floral.<br>
-            <br>
-            <h3>Questão 14: Quais são os principais benefícios do óleo de girassol para a saúde?</h3> 
-
-            <input type="radio" name="resposta14" value="reducao do colesterol e fortalecimento do sistema imunologico">a) Redução do colesterol e fortalecimento do sistema imunológico.<br>
-
-            <input type="radio" name="resposta14" value="melhora da digestao e regulacao do sono">b) Melhora da digestão e regulação do sono.<br>
-            
-            <input type="radio" name="resposta14" value="Aumento da resistência física e prevenção do envelhecimento precoce">c) Aumento da resistência física e prevenção do envelhecimento precoce.<br>
-            
-            <input type="radio" name="resposta14" value="estimulacao da memoria e combate a ansiedade">d) Estimulação da memória e combate à ansiedade.<br>
-            <br>
-            <h3>Questão 15: Qual é o significado simbólico mais comum associado aos girassóis?</h3> 
-
-            <input type="radio" name="resposta15" value="amor eterno">a) Amor eterno.<br>
-
-            <input type="radio" name="resposta15" value="sorte e prosperidade">b) Sorte e prosperidade.<br>
-            
-            <input type="radio" name="resposta15" value="renovacao e crescimento">c) Renovação e crescimento.<br>
-            
-            <input type="radio" name="resposta15" value="amizade verdadeira">d) Amizade verdadeira<br>
-            <br>
-            <h3>Questão 16: Qual é o país que lidera a produção mundial de girassóis?</h3> 
-
-            <input type="radio" name="resposta16" value="Estados Unidos">a) Estados Unidos.<br>
-
-            <input type="radio" name="resposta16" value="russia">b) Rússia.<br>
-
-            <input type="radio" name="resposta16" value="argentina">c) Argentina.<br>
-
-            <input type="radio" name="resposta16" value="ucrania">d) Ucrânia.<br>
-            <br>
-            <h3>Questão 17: Durante a sua juventude, qual é a característica especial dos girassóis em relação à direção do sol?</h3> 
-
-            <input type="radio" name="resposta17" value="eles seguem o sol durante o dia">a) Eles seguem o sol durante o dia.<br>
-
-            <input type="radio" name="resposta17" value="eles sempre enfrentam o leste">b) Eles sempre enfrentam o leste.<br>
-
-            <input type="radio" name="resposta17" value="eles tem a capacidade de girar suas flores">c) Eles têm a capacidade de girar suas flores.<br>
-
-            <input type="radio" name="resposta17" value="eles são imoveis e não reagem a luz solar">d) Eles são imóveis e não reagem à luz solar.<br>
-            <br>
-            <h3>Questão 18: Qual é a família botânica à qual os girassóis pertencem?</h3> 
-
-            <input type="radio" name="resposta18" value="asteraceae">a) Asteraceae.<br>
-
-            <input type="radio" name="resposta18" value="solanaceae">b) Solanaceae.<br>
-            
-            <input type="radio" name="resposta18" value="fabaceae">c) Fabaceae.<br>
-            
-            <input type="radio" name="resposta18" value="rosaceae">d) Rosaceae.<br>
-            <br>
-            <h3>Questão 19: Qual é a duração média do ciclo de vida de um girassol, desde o plantio até a maturidade?</h3> 
-
-            <input type="radio" name="resposta19" value="2-3 meses">a) 2-3 meses.<br>
-
-            <input type="radio" name="resposta19" value="4-6 meses">b) 4-6 meses.<br>
-            
-            <input type="radio" name="resposta19" value="8-10 meses">c) 8-10 meses.<br>
-            
-            <input type="radio" name="resposta19" value="12-14 meses">d) 12-14 meses.<br>
-            <br>
-            <h3>Questão 20: Quais são os principais polinizadores dos girassóis?</h3> 
-
-            <input type="radio" name="resposta20" value="abelhas">a) Abelhas.<br>
-
-            <input type="radio" name="resposta20" value="borboletas">b) Borboletas.<br>
-            
-            <input type="radio" name="resposta20" value="passaros">c) Pássaros.<br>
-            
-            <input type="radio" name="resposta20" value="ventos">d) Ventos<br>
-            <br>
-        <button type="submit">Enviar</button>
-        <a href="gabarito.html" class="button">Gabarito</a>
-</form>
-</div>
-
-<div id="customization-panel">
-    <h3 class="textos">Customização</h3>
-    <label class="textos" for="tamanhoFonte">Tamanho da Letra:</label>
-    <select id="tamanhoFonte">
-        <option value="medium">Médio (original)</option>
-        <option value="small">Pequeno</option>
-        <option value="large">Grande</option>
-    </select>
-    <br><br>
-    <label class="textos" for="familiaFonte">Fonte da Letra:</label>
-    <select id="familiaFonte">
-        <option value="Arial">Arial (original)</option>
-        <option value="Verdana">Verdana</option>
-        <option value="Georgia">Georgia</option>
-    </select>
-    <br><br>
-    <label class="textos" for="corFundo">Cor de Fundo:</label>
-    <select id="corFundo">
-        <option value="rgb(59, 59, 59)">Cinza (original)</option>
-        <option value="rgb(10, 10, 10)">Preto</option>
-        <option value="rgb(150, 75, 0)">Marrom</option>
-    </select>
-</div>
-
+    <div id="customization-panel">
+        <h3 class="textos">Customização</h3>
+        <label class="textos" for="tamanhoFonte">Tamanho da Letra:</label>
+        <select id="tamanhoFonte">
+            <option value="medium">Médio (original)</option>
+            <option value="small">Pequeno</option>
+            <option value="large">Grande</option>
+        </select>
+        <br><br>
+        <label class="textos" for="familiaFonte">Fonte da Letra:</label>
+        <select id="familiaFonte">
+            <option value="Arial">Arial (original)</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Georgia">Georgia</option>
+        </select>
+        <br><br>
+        <label class="textos" for="corFundo">Cor de Fundo:</label>
+        <select id="corFundo">
+            <option value="rgb(59, 59, 59)">Cinza (original)</option>
+            <option value="rgb(10, 10, 10)">Preto</option>
+            <option value="rgb(150, 75, 0)">Marrom</option>
+        </select>
+    </div>
 
 </body>
+
+</html>

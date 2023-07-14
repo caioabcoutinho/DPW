@@ -249,5 +249,6 @@ function reiniciarQuiz() {
 
 embaralharPerguntas();
 exibirPergunta(indicePergunta);
+
 });
 

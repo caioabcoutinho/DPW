@@ -125,58 +125,40 @@
                     <li>Segundo a Mitologia Grega, o aparecimento da flor do girassol aconteceu da seguinte maneira: Clítia era uma ninfa apaixonada por Hélio, o deus do Sol, que a abandonou. Ela então passou a ficar sentada no chão, sem comer e sem beber, alimentando-se apenas das suas próprias lágrimas, até que os seus pés criaram raízes e a sua face transformou-se numa flor, que continuou seguindo o sol. (Site que fala um pouco mais sobre: <a href="https://paisagismodigital.com/noticias/?id=lenda-do-girassol-uma-historia-de-amor-%7C-paisagismo-digital&in=402" target="externo"><span class="destaque">https://paisagismodigital.com/</span></a>).</li>
                 </ol><br>
 
-                <h3 id="localização">Onde encontrar</h3><br>
+                <h3 id="localizacao">Onde encontrar</h3><br>
                 <p>No Etê Jardim Ecológico , no Rio de Janeiro, você encontrará um campo de girassóis deslumbrante, perfeito para admirar e explorar. Para descobrir o quão próximo você está dessa experiência incrível, basta colocar abaixo suas coordenadas que calculamos a distância para você!</p><br>
                 <div class="distancia">
-                <form id="formulario">
-                    <label for="latitude">Latitude:</label>
-                    <input type="text" id="latitude" required><br>
-
-                    <label for="longitude">Longitude:</label>
-                    <input type="text" id="longitude" required><br>
-
-                    <label for="unidade">Unidade:</label>
-                    <select id="unidade">
-                        <option value="K">Quilômetros</option>
-                        <option value="M">Milhas</option>
-                    </select><br>
-
-                    <button type="submit">Calcular</button>
-                </form>
+                    <h2 id="demo">Clique no botão para receber sua distância em relação ao Etê Jardim Ecológico:</h2>
+                    <button onclick="getLocation()">Clique Aqui</button>   
                 </div>
-            <div id="resultado"></div>
+            <div>
+                <h2 id="resultado" class="resultado"></h2>
             </div>
         </section>
-        
+        </div>
     </article>
-
-    <div id="customization-panel">
+    <div id="customization-panel" class="customizacao">
         <h3 class="textos">Customização</h3>
-        <label class="textos" for="tamanhoFonte">Tamanho da Letra:</label>
+        <label class="textos" for="tamanhoFonte">Letra:</label>
         <select id="tamanhoFonte">
             <option value="medium">Médio (original)</option>
             <option value="small">Pequeno</option>
             <option value="large">Grande</option>
         </select>
         <br><br>
-        <label class="textos" for="familiaFonte">Fonte da Letra:</label>
+        <label class="textos" for="familiaFonte">Fonte:</label>
         <select id="familiaFonte">
             <option value="Arial">Arial (original)</option>
             <option value="Verdana">Verdana</option>
             <option value="Georgia">Georgia</option>
         </select>
         <br><br>
-        <label class="textos" for="corFundo">Cor de Fundo:</label>
+        <label class="textos" for="corFundo">Fundo:</label>
         <select id="corFundo">
             <option value="rgb(59, 59, 59)">Cinza (original)</option>
             <option value="rgb(10, 10, 10)">Preto</option>
             <option value="rgb(150, 75, 0)">Marrom</option>
         </select>
-    </div>
-
 </body>
-
-
-
 
 </html>

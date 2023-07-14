@@ -115,6 +115,8 @@ footer{
 
 .tituloPaginas{
     text-align: center;
+    font-size: x-large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 }
 
 td {
@@ -162,6 +164,26 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     width: 45%;
+}
+
+.imagens-promocao {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.imagem-table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.imagem-table td {
+    width: 33.33%;
+}
+
+.imagem-promocao {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .quiz{
@@ -285,3 +307,39 @@ button{
     font-weight: bold;
     display: none;
 }
+
+.distancia {
+    color: white;
+    width: 600px;
+    padding: 20px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+    position: relative; 
+  }
+  
+.distancia button {
+    padding: 20px 40px;
+}
+
+.resultado {
+    color: white;
+    width: 600px;
+    padding: 20px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+    position: relative;
+
+}
+
+.customizacao {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+} 
+
